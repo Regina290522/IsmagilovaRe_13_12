@@ -9,7 +9,7 @@ class MainPage:
         self._driver.implicitly_wait(10)
         self._driver.maximize_window()
 
-    with allure.step("Добавление книги на кириллице"):
+    with allure.step("Добавление товара на кириллице"):
         def rus_add(self, term):
             self._driver.find_element(By.CLASS_NAME, "header-add__input").send_keys(term)
             self._driver.find_element(By.CLASS_NAME, "header-add__button").click()
